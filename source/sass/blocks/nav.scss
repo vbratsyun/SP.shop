@@ -1,0 +1,27 @@
+.nav {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav__toggle {
+  position: relative;
+  width: 29px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 29px;
+    height: 2px;
+    background-color: $black-color;
+    box-shadow: 0 10px 0 0 $black-color, 0 20px 0 0 $black-color;
+  }
+}

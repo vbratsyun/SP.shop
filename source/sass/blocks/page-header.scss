@@ -1,0 +1,41 @@
+.page-header {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.page-header__logo {
+  margin-right: auto;
+}
+
+.page-header__logo-image {
+  display: block;
+}
+
+.page-header__basket {
+  position: relative;
+}
+
+.page-header__icon {
+  display: block;
+}
+
+.page-header__basket-sup-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #3366ff;
+}
+
+.page-header__basket-sup-icon-quantity {
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+}

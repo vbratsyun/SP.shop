@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  gap: 5px;
+
+  &--types-of-payments,
+  &--special-proposal {
+    align-items: center;
+    gap: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+
+    &--types-of-payments,
+    &--special-proposal {
+      gap: 9px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      gap: 10px;
+    }
+
+    &--calculation {
+      gap: none;
+      justify-content: space-between;
+    }
+  }
+}

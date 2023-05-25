@@ -1,0 +1,29 @@
+.product {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.product__promo-code {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.product__my-basket,
+.product__promo-code,
+.product__calculation {
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+    border-bottom: 1px solid #cfcfcf;
+  }
+}
+
+.product__calculation {
+  @media (min-width: $desktop-width) {
+    padding: 40px;
+    border-bottom: none;
+  }
+}

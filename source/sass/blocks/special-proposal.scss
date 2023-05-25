@@ -1,0 +1,43 @@
+.special-proposal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.special-proposal__credit-card-info {
+  color: #8c8c8c;
+}
+
+.special-proposal__control-input {
+  align-self: flex-start;
+}
+
+.special-proposal__control-label {
+  max-width: 238px;
+}
+
+.special-proposal__control-mark {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 8px;
+    height: 8px;
+    background: #3366ff;
+  }
+}
+
+.special-proposal__input[type="checkbox"]:checked
+  + .special-proposal__control-mark::before {
+  display: block;
+}

@@ -1,0 +1,16 @@
+.button {
+  margin: 0;
+  padding: 8px 30px;
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  min-height: 40px;
+  cursor: pointer;
+
+  &--active {
+    background-color: #3366ff;
+    color: #ffffff;
+    width: 125px;
+    margin-left: auto;
+  }
+}

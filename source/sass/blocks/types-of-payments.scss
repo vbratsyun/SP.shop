@@ -1,0 +1,17 @@
+.types-of-payments {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    column-gap: 82px;
+  }
+}
+
+.types-of-payments__icon {
+  width: 94px;
+  height: 23px;
+  background: url("../../img/icon-pay-pal.svg") no-repeat 7px 0;
+}

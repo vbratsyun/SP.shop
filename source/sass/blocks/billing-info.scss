@@ -1,0 +1,108 @@
+.billing-info {
+  @media (min-width: $desktop-hd-width) {
+    width: 660px;
+  }
+}
+
+.billing-info__title,
+.billing-info__types-of-payments {
+  margin-bottom: 17px;
+}
+
+.billing-info__types-of-payments {
+  @media (min-width: $tablet-width) {
+    margin: 0 50px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 30px 40px;
+  }
+
+  @media (min-width: $desktop-hd-width) {
+    margin: 0 15px 40px;
+  }
+}
+
+.billing-info__title {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0 30px 37px;
+  }
+
+  @media (min-width: $desktop-hd-width) {
+    display: block;
+    margin: 0 15px 37px;
+  }
+}
+
+.billing-info__card-details {
+  margin-bottom: 21px;
+}
+
+.billing-info__special-proposal {
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 50px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 30px 39px;
+  }
+
+  @media (min-width: $desktop-hd-width) {
+    margin: 0 15px 39px;
+  }
+}
+
+.billing-info__input {
+  padding: 0;
+  background-color: #ededf1;
+  border-radius: 3px;
+}
+
+.billing-info__control-mark {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 8px;
+    height: 8px;
+    background: #3366ff;
+    border-radius: 50%;
+  }
+}
+
+.billing-info__billing-info-buttons {
+  @media (min-width: $tablet-width) {
+    margin: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-hd-width) {
+    margin: 0 15px;
+  }
+}
+
+.billing-info__input[type="radio"]:checked
+  + .billing-info__control-mark::before {
+  display: block;
+}
