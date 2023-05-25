@@ -1,0 +1,122 @@
+.product-list__product-card {
+  display: grid;
+  grid-template-columns: 30.2% 26% 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 39px;
+}
+
+.product-list__product-card:last-child {
+  margin-bottom: 0;
+}
+
+.product-list__link {
+  grid-row: 1/3;
+}
+
+.product-list__image {
+  display: block;
+}
+
+.product-list__title {
+  grid-column: 2/4;
+  min-height: 32px;
+  margin: 0;
+}
+
+.product-list__quantity {
+  grid-column: 2/3;
+  display: flex;
+}
+
+.product-list__price {
+  grid-column: 3/4;
+  margin: 0;
+  width: min-content;
+  padding: 7px 0 0 13px;
+
+  @media (min-width: $desktop-hd-width) {
+    width: max-content;
+  }
+}
+
+.product-list__button {
+  grid-column: 4/-1;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 18px;
+    height: 1px;
+    background-color: #cfcfcf;
+  }
+
+  &::before {
+    content: "";
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.product-list__range-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid $black-color;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 1px;
+    background-color: $black-color;
+  }
+
+  &--positive {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1px;
+      height: 10px;
+      background-color: $black-color;
+    }
+  }
+}
+
+.product-list__range-input {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 6px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

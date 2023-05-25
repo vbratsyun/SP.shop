@@ -1,0 +1,59 @@
+.page-main {
+  flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 410px;
+  }
+}
+
+.page-main__left {
+  padding-top: 60px;
+  padding-bottom: 280px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      min-height: 100%;
+      background-color: #cfcfcf;
+    }
+  }
+}
+
+.page-main__legend {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 661px;
+    margin: 0 auto 60px;
+  }
+}
+
+// .page-main__product {
+//   @media (min-width: $desktop-width) {
+//     padding: 30px 10px 0 40px;
+//   }
+// }
+
+.page-main__billing-info {
+  @media (min-width: $desktop-width) {
+    margin: 0 50px;
+  }
+
+  @media (min-width: $desktop-hd-width) {
+    margin: 0 auto;
+  }
+}

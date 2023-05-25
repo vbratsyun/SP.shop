@@ -1,0 +1,22 @@
+.calculation-list {
+  width: 314px;
+}
+
+.calculation-list__title {
+  line-height: 34px;
+
+  &--total {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.calculation-list__price {
+  line-height: 34px;
+  margin: 0;
+
+  &--total {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

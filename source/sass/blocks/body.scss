@@ -1,0 +1,28 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  color: $black-color;
+  background-color: $white-color;
+}
+
+.body__page-header {
+  padding: 26px 10px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 30px 23px;
+  }
+}
+
+.body__page-main {
+  padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
