@@ -14,6 +14,10 @@
 
 .special-proposal__control-label {
   max-width: 238px;
+
+  @media (min-width: $tablet-width) {
+    max-width: max-content;
+  }
 }
 
 .special-proposal__control-mark {

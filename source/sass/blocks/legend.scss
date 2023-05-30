@@ -17,15 +17,14 @@
 .legend__map-list {
   position: relative;
   display: flex;
-  // justify-content: space-around;
   margin: 0 auto 9px;
 
   &::after {
     content: "";
     position: absolute;
     top: 8px;
-    left: 35px;
-    width: 144px;
+    left: 33px;
+    width: 147px;
     height: 2px;
     background-color: #3366ff;
   }
