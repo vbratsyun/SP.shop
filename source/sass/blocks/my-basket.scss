@@ -1,3 +1,15 @@
 .my-basket__title {
   margin-bottom: 30px;
 }
+
+.my-basket__link {
+  position: relative;
+  display: block;
+  color: #3366ff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.my-basket__icon {
+  fill: #3366ff;
+}
