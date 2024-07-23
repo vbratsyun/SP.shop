@@ -57,7 +57,7 @@ const onCancelButtonClick = (event) => {
 
   if (!list.hasChildNodes()) {
 const message = document.querySelector('.my-basket__link');
-message.style.display = 'block';
+message.style.display = 'flex';
 tax.textContent = '0';
 shipping.textContent = '0';
 total.textContent = Number(subPrice.textContent) + Number(tax.textContent) + Number(shipping.textContent);
