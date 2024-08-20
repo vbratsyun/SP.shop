@@ -41,7 +41,6 @@
   }
 }
 
-.special-proposal__input[type="checkbox"]:checked
-  + .special-proposal__control-mark::before {
+.special-proposal__input[type="checkbox"]:checked + .special-proposal__control-mark::before {
   display: block;
 }
