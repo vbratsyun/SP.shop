@@ -102,7 +102,6 @@
   }
 }
 
-.billing-info__input[type="radio"]:checked
-  + .billing-info__control-mark::before {
+.billing-info__input[type="radio"]:checked + .billing-info__control-mark::before {
   display: block;
 }
